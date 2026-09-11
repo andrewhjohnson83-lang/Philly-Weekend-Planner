@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Philly Weekend Planner | Your 48-Hour Blueprint to Philadelphia</title>
+<meta name="description" content="Plan a realistic Philadelphia weekend in minutes. Take the 60-second quiz, browse curated activities, and see transparent budget details." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Philly<span>Weekend</span>Planner</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="plans.html">Weekend Plans</a></li>
+      <li><a href="explore.html">Explore Activities</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="#quiz" class="btn btn-primary">Plan My Weekend</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="background-image: linear-gradient(180deg, rgba(31,59,51,0.72), rgba(31,59,51,0.85)), url('images/hero-skyline.jpg');">
+  <div class="container hero-inner">
+    <h1>Your Weekend in Philadelphia, Already Figured Out.</h1>
+    <p class="lead">Skip the research spiral. Tell us your style and budget, and we'll hand you a walkable, realistic weekend plan in under a minute.</p>
+    <div class="cta-row">
+      <a href="#quiz" class="btn btn-primary">Build My Weekend</a>
+      <a href="plans.html" class="btn btn-light">See Weekend Plans</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">Why Plan With Us</span>
+      <h2>A weekend that actually fits together</h2>
+      <p>Most tourism sites hand you hundreds of options and no sense of pacing. We don't.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">🚶</div>
+        <h3>Walkable &amp; Car-Free</h3>
+        <p>Every route is sequenced by neighborhood, so you're never backtracking across town or hunting for parking.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">💵</div>
+        <h3>Transparent Pricing</h3>
+        <p>Real admission costs and price tiers up front, so your budget is set before you ever leave home.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">🥨</div>
+        <h3>Local Food &amp; Culture, Curated</h3>
+        <p>We skip the tourist traps and point you toward the markets, museums, and meals locals actually recommend.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-surface); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);">
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">Featured Weekend Plans</span>
+      <h2>Three Ways to Spend Your Weekend</h2>
+      <p>Each plan is a full Saturday-to-Sunday route. Browse them now, or let the quiz below match you to one.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/independence-hall.jpg" alt="Independence Hall in Old City Philadelphia" class="card-image" />
+        <div class="card-body">
+          <h3>The Founding Weekend</h3>
+          <p class="description">A historic immersion through Old City: Independence Hall, the Liberty Bell, and the Museum of the American Revolution.</p>
+          <a href="plans.html#founding" class="card-footer-link">View Plan &rarr;</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/philadelphia-museum-of-art.jpg" alt="Philadelphia Museum of Art and the Rocky Steps" class="card-image" />
+        <div class="card-body">
+          <h3>The Art &amp; Riverfront Weekend</h3>
+          <p class="description">World-class art at the Barnes and the PMA, balanced with a scenic stroll along the Schuylkill Banks Boardwalk.</p>
+          <a href="plans.html#arts" class="card-footer-link">View Plan &rarr;</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/italian-market.jpg" alt="South 9th Street Italian Market stalls" class="card-image" />
+        <div class="card-body">
+          <h3>The Local Flavor Weekend</h3>
+          <p class="description">A food-first route through Reading Terminal Market, the Italian Market, and Philadelphia's Magic Gardens.</p>
+          <a href="plans.html#flavor" class="card-footer-link">View Plan &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">Build Your Weekend</span>
+      <h2>Find Your Weekend in 60 Seconds</h2>
+      <p>Answer three quick questions and we'll match you to a full weekend route.</p>
+    </div>
+
+    <form class="quiz-panel" id="quiz-form" novalidate>
+      <fieldset class="quiz-question">
+        <legend>1. What matters most to you this weekend?</legend>
+        <div class="quiz-options">
+          <div class="quiz-option">
+            <input type="radio" name="focus" id="focus-history" value="founding" />
+            <label for="focus-history">History &amp; Landmarks</label>
+          </div>
+          <div class="quiz-option">
+            <input type="radio" name="focus" id="focus-arts" value="arts" />
+            <label for="focus-arts">Art &amp; Scenery</label>
+          </div>
+          <div class="quiz-option">
+            <input type="radio" name="focus" id="focus-food" value="flavor" />
+            <label for="focus-food">Food &amp; Neighborhoods</label>
+          </div>
+        </div>
+        <p class="quiz-error" data-error-for="focus">Please choose an option to continue.</p>
+      </fieldset>
+
+      <fieldset class="quiz-question">
+        <legend>2. What's your budget style?</legend>
+        <div class="quiz-options">
+          <div class="quiz-option">
+            <input type="radio" name="budget" id="budget-low" value="budget" />
+            <label for="budget-low">Keep it affordable ($)</label>
+          </div>
+          <div class="quiz-option">
+            <input type="radio" name="budget" id="budget-mid" value="balanced" />
+            <label for="budget-mid">Balanced ($$)</label>
+          </div>
+          <div class="quiz-option">
+            <input type="radio" name="budget" id="budget-high" value="premium" />
+            <label for="budget-high">Treat yourself ($$$)</label>
+          </div>
+        </div>
+        <p class="quiz-error" data-error-for="budget">Please choose an option to continue.</p>
+      </fieldset>
+
+      <fieldset class="quiz-question">
+        <legend>3. How do you like to move through a day?</legend>
+        <div class="quiz-options">
+          <div class="quiz-option">
+            <input type="radio" name="pace" id="pace-relaxed" value="relaxed" />
+            <label for="pace-relaxed">Relaxed &mdash; 1 to 2 main stops</label>
+          </div>
+          <div class="quiz-option">
+            <input type="radio" name="pace" id="pace-packed" value="packed" />
+            <label for="pace-packed">Packed &mdash; back-to-back stops</label>
+          </div>
+        </div>
+        <p class="quiz-error" data-error-for="pace">Please choose an option to continue.</p>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary btn-block">Match My Weekend</button>
+
+      <div id="quiz-results" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Want Something More Custom?</h2>
+      <p>Have specific dates, a bigger group, or an idea that doesn't fit a template? Tell us what you have in mind.</p>
+      <div class="cta-row">
+        <a href="contact.html" class="btn btn-light">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Philly Weekend Planner</div>
+        <p class="footer-note">A student-built travel planning concept for a realistic 48-hour Philadelphia weekend. Not an official tourism service.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plans.html">Weekend Plans</a></li>
+          <li><a href="explore.html">Explore Activities</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="index.html#quiz">Take the Quiz</a></li>
+          <li><a href="contact.html">Plan a Custom Weekend</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Philly Weekend Planner. Student project, not a real business.</span>
+      <a href="images/CREDITS.md">Photo credits</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/activities-data.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

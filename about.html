@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About | Philly Weekend Planner</title>
+<meta name="description" content="Who Philly Weekend Planner is, why it exists, and how to get around Philadelphia without a car." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Philly<span>Weekend</span>Planner</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="plans.html">Weekend Plans</a></li>
+      <li><a href="explore.html">Explore Activities</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="index.html#quiz" class="btn btn-primary">Plan My Weekend</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <span class="eyebrow" style="color:#fff;">About</span>
+    <h1>Why Philly Weekend Planner Exists</h1>
+    <p>A small, student-built idea aimed at a real, common problem: short trips that turn into overwhelming research projects.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="about-block">
+      <h2>Our Story</h2>
+      <p>Philly Weekend Planner started from a familiar pattern: friends visiting for a weekend would either over-plan themselves into exhaustion, trying to hit twenty attractions in two days, or under-plan entirely and miss the things that make Philadelphia worth the trip. Neither made for a good weekend.</p>
+      <p>This site is a fictional project built for a web development course, but the problem it's solving is real. Most tourism resources list hundreds of attractions with no sense of geography, pacing, or true cost, which leads to what we call itinerary paralysis.</p>
+    </div>
+
+    <div class="about-block">
+      <h2>Mission &amp; Who We Serve</h2>
+      <p><strong>Our mission</strong> is to make a genuinely great Philadelphia weekend accessible without requiring hours of independent research.</p>
+      <p>We built this for two kinds of visitors: <strong>regional travelers</strong> coming in from places like New York, DC, or Baltimore for a 48 to 72 hour trip, and <strong>local Philadelphia-area residents</strong> looking for a reason to finally explore a neighborhood they've never gotten around to.</p>
+    </div>
+
+    <div class="about-block">
+      <h2>What Makes Us Different</h2>
+      <ul class="differentiator-list">
+        <li><strong>Curated, not exhaustive.</strong> We'd rather hand you 3 great routes and 18 solid stops than 200 undifferentiated options.</li>
+        <li><strong>Walkable by design.</strong> Every plan is sequenced by neighborhood so you're not crossing the city and back in the same afternoon.</li>
+        <li><strong>Transparent about cost.</strong> Real price tiers and admission ranges are shown up front, not discovered at the door.</li>
+      </ul>
+    </div>
+
+    <div class="about-block">
+      <h2>Getting Around Without a Car</h2>
+      <p>Philadelphia's compact grid and transit system make it easy to skip the rental car entirely. Here are the basics.</p>
+
+      <div class="accordion" id="faq-accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            How much does SEPTA cost?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>The base fare for bus and subway is $2.90 per ride when you tap a contactless credit card, debit card, Apple Pay, Google Pay, or a SEPTA Key card. Free transfers are included on up to two connections within two hours.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            Do I need to book tickets in advance?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>For a few stops, yes. Independence Hall requires a free timed-entry reservation (plus a $1 booking fee), and Philadelphia's Magic Gardens sells out its weekend timed tickets days in advance. Most other stops, including the Liberty Bell and Reading Terminal Market, are walk-up.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            Is Philadelphia walkable in a weekend?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>Yes, within a neighborhood. Center City sits on a compact grid between two rivers, and walking across the entire downtown core takes roughly 25 to 30 minutes. Our plans are built to keep each day's stops within one or two connected neighborhoods.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            How does Indego bike share work?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <p>Indego has over 2,000 bikes across 200+ docking stations citywide. A 24-hour guest pass is $15 and includes unlimited 60-minute rides on classic bikes, which is plenty for getting between neighborhoods on your own schedule.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Ready to Plan Your Weekend?</h2>
+      <p>Browse the three signature weekend plans, or reach out with your own dates and interests.</p>
+      <div class="cta-row">
+        <a href="plans.html" class="btn btn-light">View Weekend Plans</a>
+        <a href="contact.html" class="btn btn-secondary" style="border-color:#fff; color:#fff;">Ask a Question</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Philly Weekend Planner</div>
+        <p class="footer-note">A student-built travel planning concept for a realistic 48-hour Philadelphia weekend. Not an official tourism service.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plans.html">Weekend Plans</a></li>
+          <li><a href="explore.html">Explore Activities</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="index.html#quiz">Take the Quiz</a></li>
+          <li><a href="contact.html">Plan a Custom Weekend</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Philly Weekend Planner. Student project, not a real business.</span>
+      <a href="images/CREDITS.md">Photo credits</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/accordion.js"></script>
+</body>
+</html>

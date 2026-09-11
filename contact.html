@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Philly Weekend Planner</title>
+<meta name="description" content="Request a custom Philadelphia weekend plan." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Philly<span>Weekend</span>Planner</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="plans.html">Weekend Plans</a></li>
+      <li><a href="explore.html">Explore Activities</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li class="nav-cta"><a href="index.html#quiz" class="btn btn-primary">Plan My Weekend</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <span class="eyebrow" style="color:#fff;">Contact</span>
+    <h1>Let's Plan Your Weekend</h1>
+    <p>Tell us a bit about your trip and we'll follow up with a plan tailored to your dates, group, and budget.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-layout">
+
+    <div class="form-card">
+      <div class="form-banner" id="form-banner" role="alert"></div>
+
+      <form id="contact-form" novalidate>
+        <div class="form-row" data-field="name">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" autocomplete="name" />
+          <p class="field-error">Please enter your name.</p>
+        </div>
+
+        <div class="form-row" data-field="email">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" autocomplete="email" />
+          <p class="field-error">Please enter a valid email address.</p>
+        </div>
+
+        <div class="form-row" data-field="weekendType">
+          <label for="weekendType">Type of Weekend *</label>
+          <select id="weekendType" name="weekendType">
+            <option value="">Choose one&hellip;</option>
+            <option value="founding">The Founding Weekend</option>
+            <option value="arts">The Art &amp; Riverfront Weekend</option>
+            <option value="flavor">The Local Flavor Weekend</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+          <p class="field-error">Please choose a weekend type.</p>
+        </div>
+
+        <div class="form-row" data-field="budget">
+          <label for="budget">Budget Range *</label>
+          <select id="budget" name="budget">
+            <option value="">Choose one&hellip;</option>
+            <option value="budget">$ &mdash; Budget-conscious</option>
+            <option value="balanced">$$ &mdash; Balanced</option>
+            <option value="premium">$$$ &mdash; Premium</option>
+          </select>
+          <p class="field-error">Please select a budget range.</p>
+        </div>
+
+        <div class="form-row" data-field="dates">
+          <label for="dates">Travel Dates <span class="hint">(optional)</span></label>
+          <input type="date" id="dates" name="dates" />
+        </div>
+
+        <div class="form-row" data-field="interests">
+          <label>Interests <span class="hint">(optional, pick any)</span></label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interests" value="history" /> History</label>
+            <label><input type="checkbox" name="interests" value="art" /> Art &amp; Museums</label>
+            <label><input type="checkbox" name="interests" value="food" /> Food &amp; Markets</label>
+            <label><input type="checkbox" name="interests" value="outdoors" /> Outdoors</label>
+          </div>
+        </div>
+
+        <div class="form-row" data-field="message">
+          <label for="message">Message <span class="hint">(optional)</span></label>
+          <textarea id="message" name="message" placeholder="Anything else we should know? Group size, accessibility needs, must-see stops..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit Planning Request</button>
+      </form>
+    </div>
+
+    <aside class="sidebar-card">
+      <h3>What Happens Next</h3>
+      <ul>
+        <li>We review every request and match it to the closest weekend plan.</li>
+        <li>You'll hear back within <strong>2 business days</strong> with a suggested itinerary.</li>
+        <li>This is a student project form: nothing is actually submitted to a server.</li>
+      </ul>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="plans.html" style="color:#fff;">Browse Weekend Plans</a></li>
+        <li><a href="explore.html" style="color:#fff;">Explore All Activities</a></li>
+      </ul>
+    </aside>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Philly Weekend Planner</div>
+        <p class="footer-note">A student-built travel planning concept for a realistic 48-hour Philadelphia weekend. Not an official tourism service.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plans.html">Weekend Plans</a></li>
+          <li><a href="explore.html">Explore Activities</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="index.html#quiz">Take the Quiz</a></li>
+          <li><a href="contact.html">Plan a Custom Weekend</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Philly Weekend Planner. Student project, not a real business.</span>
+      <a href="images/CREDITS.md">Photo credits</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

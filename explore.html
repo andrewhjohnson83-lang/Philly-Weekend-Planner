@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Explore Activities | Philly Weekend Planner</title>
+<meta name="description" content="Search and filter 18 curated Philadelphia activities by category, price, and setting." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Philly<span>Weekend</span>Planner</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="plans.html">Weekend Plans</a></li>
+      <li><a href="explore.html" aria-current="page">Explore Activities</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="index.html#quiz" class="btn btn-primary">Plan My Weekend</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <span class="eyebrow" style="color:#fff;">Explore Activities</span>
+    <h1>Browse Every Curated Stop</h1>
+    <p>18 sights, markets, and museums, filterable by category, price, and setting so you only see what fits your weekend.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <form class="filter-bar" id="filter-bar">
+      <div class="filter-field">
+        <label for="filter-search">Search</label>
+        <input type="search" id="filter-search" placeholder="Search by name or keyword&hellip;" />
+      </div>
+      <div class="filter-field">
+        <label for="filter-category">Category</label>
+        <select id="filter-category">
+          <option value="all">All categories</option>
+          <option value="historic">Historic Foundations &amp; Landmarks</option>
+          <option value="arts-culture">World-Class Arts &amp; Culture</option>
+          <option value="food">Food &amp; Markets</option>
+          <option value="outdoor">Outdoor &amp; Entertainment</option>
+        </select>
+      </div>
+      <div class="filter-field">
+        <label for="filter-price">Price</label>
+        <select id="filter-price">
+          <option value="all">Any price</option>
+          <option value="1">$</option>
+          <option value="2">$$</option>
+          <option value="3">$$$</option>
+        </select>
+      </div>
+      <div class="filter-field">
+        <label for="filter-setting">Setting</label>
+        <select id="filter-setting">
+          <option value="all">Any setting</option>
+          <option value="Indoor">Indoor</option>
+          <option value="Outdoor">Outdoor</option>
+          <option value="Mixed">Mixed</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="results-meta">
+      <span id="results-count">Showing 18 of 18 activities</span>
+      <button type="button" class="btn btn-secondary" id="filter-reset" style="padding:0.5rem 1rem; font-size:0.85rem;">Reset Filters</button>
+    </div>
+
+    <div class="card-grid" id="activity-grid"></div>
+
+    <div class="empty-state" id="empty-state">
+      <h3>No activities match those filters.</h3>
+      <p>Try clearing a filter or searching a different keyword.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Not Sure Where to Start?</h2>
+      <p>Let us map these activities into a full weekend for you instead of piecing it together yourself.</p>
+      <div class="cta-row">
+        <a href="contact.html" class="btn btn-light">Plan Your Custom Route</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Philly Weekend Planner</div>
+        <p class="footer-note">A student-built travel planning concept for a realistic 48-hour Philadelphia weekend. Not an official tourism service.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plans.html">Weekend Plans</a></li>
+          <li><a href="explore.html">Explore Activities</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="index.html#quiz">Take the Quiz</a></li>
+          <li><a href="contact.html">Plan a Custom Weekend</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Philly Weekend Planner. Student project, not a real business.</span>
+      <a href="images/CREDITS.md">Photo credits</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/activities-data.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/filter.js"></script>
+</body>
+</html>
