@@ -151,20 +151,6 @@ const ACTIVITIES = [
     image: "images/reading-terminal-market.jpg",
   },
   {
-    id: "tommy-dinics",
-    name: "Tommy DiNic's",
-    category: "food",
-    neighborhood: "Center City (Reading Terminal)",
-    description:
-      "The benchmark Philly roast pork sandwich stall, tucked inside Reading Terminal Market.",
-    price: "$",
-    priceTier: 1,
-    setting: "Indoor",
-    bestFor: ["Foodies", "Solo travelers"],
-    tags: ["food", "sandwich", "iconic-eat"],
-    image: "images/tommy-dinics.jpg",
-  },
-  {
     id: "italian-market",
     name: "South 9th Street Italian Market",
     category: "food",
@@ -177,20 +163,6 @@ const ACTIVITIES = [
     bestFor: ["Foodies", "Budget travelers"],
     tags: ["food", "market", "outdoor", "authentic"],
     image: "images/italian-market.jpg",
-  },
-  {
-    id: "dalessandros",
-    name: "Dalessandro's Steaks",
-    category: "food",
-    neighborhood: "Roxborough",
-    description:
-      "A neighborhood cheesesteak counter known for finely chopped ribeye, worth the short trip out from Center City.",
-    price: "$",
-    priceTier: 1,
-    setting: "Mixed",
-    bestFor: ["Foodies"],
-    tags: ["food", "cheesesteak", "off-the-beaten-path"],
-    image: "images/dalessandros.jpg",
   },
   {
     id: "parc-brasserie",

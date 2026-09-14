@@ -119,6 +119,18 @@ section { padding: var(--section-padding); }
 
 .btn:active { transform: translateY(1px); }
 
+.btn:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+a:focus-visible,
+.accordion-trigger:focus-visible,
+.card-footer-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 .btn-primary {
   background: var(--color-primary);
   color: #fff;
@@ -357,7 +369,7 @@ section { padding: var(--section-padding); }
 
 .tag {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -373,7 +385,7 @@ section { padding: var(--section-padding); }
 
 .card-body p.description {
   color: var(--color-text-muted);
-  font-size: 0.94rem;
+  font-size: 0.97rem;
   flex-grow: 1;
 }
 
@@ -482,7 +494,15 @@ section { padding: var(--section-padding); }
 }
 
 .result-card h3 { margin-bottom: 0.3rem; }
-.result-card .result-tagline { color: var(--color-text-muted); margin-bottom: 1.2rem; }
+.result-card .result-tagline { color: var(--color-text-muted); margin-bottom: 1rem; }
+
+.result-reason {
+  font-size: 0.95rem;
+  background: rgba(181,80,45,0.08);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.3rem;
+}
 
 .result-columns {
   display: grid;
@@ -567,7 +587,7 @@ section { padding: var(--section-padding); }
   margin-bottom: 0.5rem;
 }
 
-.schedule ul { margin: 0; padding-left: 1.1em; font-size: 0.92rem; }
+.schedule ul { margin: 0; padding-left: 1.1em; font-size: 0.96rem; }
 .schedule li { margin-bottom: 0.4rem; }
 
 @media (max-width: 860px) {
@@ -585,6 +605,50 @@ section { padding: var(--section-padding); }
 }
 
 .callout h3 { margin-bottom: 0.5rem; }
+
+/* ---- Budget calculator (Weekend Plans page, secondary feature) ---- */
+.calculator-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.calculator-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.calculator-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  padding: 1.1rem 1.4rem;
+}
+
+.calculator-total span {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.calculator-total strong {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--color-primary-dark);
+}
+
+@media (max-width: 480px) {
+  .calculator-panel { padding: 1.5rem; }
+  .calculator-total { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+}
 
 /* ---- Explore / filters ---- */
 .filter-bar {
@@ -759,7 +823,7 @@ section { padding: var(--section-padding); }
 .form-row .hint {
   font-weight: 400;
   color: var(--color-text-muted);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
 }
 
 .form-row input,
@@ -794,7 +858,7 @@ section { padding: var(--section-padding); }
 .field-error {
   display: none;
   color: var(--color-error);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   margin-top: 0.4rem;
 }
 
@@ -847,7 +911,7 @@ section { padding: var(--section-padding); }
 
 .sidebar-card h3 { color: #fff; }
 .sidebar-card ul { padding-left: 1.1em; }
-.sidebar-card li { margin-bottom: 0.6rem; font-size: 0.94rem; color: rgba(255,255,255,0.9); }
+.sidebar-card li { margin-bottom: 0.6rem; font-size: 0.97rem; color: rgba(255,255,255,0.9); }
 
 /* ---- Footer ---- */
 .site-footer {
@@ -875,16 +939,16 @@ section { padding: var(--section-padding); }
 
 .footer-grid ul { list-style: none; padding: 0; margin: 0; }
 .footer-grid li { margin-bottom: 0.6rem; }
-.footer-grid a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.92rem; }
+.footer-grid a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
 .footer-grid a:hover { color: #fff; }
 
 .footer-brand { color: #fff; font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.6rem; }
-.footer-note { font-size: 0.85rem; color: rgba(255,255,255,0.65); max-width: 320px; }
+.footer-note { font-size: 0.88rem; color: rgba(255,255,255,0.7); max-width: 320px; }
 
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.15);
   padding-top: 1.5rem;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: rgba(255,255,255,0.6);
   display: flex;
   flex-wrap: wrap;

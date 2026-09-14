@@ -15,13 +15,11 @@ All photos are sourced from Wikimedia Commons under Creative Commons or public d
 | eastern-state-penitentiary.jpg | Eastern State Penitentiary | Carol M. Highsmith | Public domain | https://commons.wikimedia.org/wiki/File:Eastern_State_Penitentiary,_Philadelphia,_Pennsylvania_LCCN2011632222.tif |
 | magic-gardens.jpg | Philadelphia's Magic Gardens | sashafatcat | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Magic_Garden-Philadelphia.jpg |
 | reading-terminal-market.jpg | Reading Terminal Market | ajay_suresh | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Reading_Terminal_Market_(53587020195).jpg |
-| tommy-dinics.jpg | Classic Philadelphia cheesesteak (generic, not the actual DiNic's storefront) | Unknown, Wikimedia Commons | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:PatsCheesesteak.jpg |
 | italian-market.jpg | South 9th Street Italian Market | Busterfreak | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Phila-dibrunobros.jpg |
-| dalessandros.jpg | Classic Philadelphia cheesesteak (generic, not the actual Dalessandro's storefront) | Unknown, Wikimedia Commons | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:PatsCheesesteak.jpg |
 | parc-brasserie.jpg | Rittenhouse Square (used to represent the Parc Brasserie setting) | Daderot | Public domain | https://commons.wikimedia.org/wiki/File:Rittenhouse_Square_-_autumn_-_IMG_6570.JPG |
 | schuylkill-banks.jpg | Schuylkill River Trail / Boardwalk | Ii2nmd | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Schuylkill_River_Trail_2018.jpg |
 | spruce-street-harbor-park.jpg | Spruce Street Harbor Park | LittleT889 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Spruce_Street_Harbor_Park.jpg |
 | franklin-institute.jpg | The Franklin Institute | ajay_suresh | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Franklin_Institute_(53574514629).jpg |
 | walnut-street-theatre.jpg | Walnut Street Theatre | ajay_suresh | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Walnut_Street_Theatre_(53590488689).jpg |
 
-Note: no exact free-license photo of Tommy DiNic's or Dalessandro's Steaks storefronts was available, so both use a generic Philadelphia cheesesteak photo as a placeholder. Swap in a real vendor photo before treating this as a live site.
+Note: Tommy DiNic's and Dalessandro's Steaks are not listed in the Explore Activities directory because no free-license photo of either storefront was available. Both are still part of The Local Flavor Weekend itinerary on the Weekend Plans page, described in text only.

@@ -1,6 +1,23 @@
 // "Build Your Weekend" quiz — home page main interactive feature.
 // Question 1 picks which pre-built plan to show. Question 2 only changes
 // the budget note text. Question 3 decides how many stops to display.
+const FOCUS_LABELS = {
+  founding: "history and landmarks",
+  arts: "art and scenery",
+  flavor: "food and neighborhoods",
+};
+
+const BUDGET_LABELS = {
+  budget: "an affordable",
+  balanced: "a balanced",
+  premium: "a premium",
+};
+
+const PACE_LABELS = {
+  relaxed: "a relaxed",
+  packed: "a packed, back-to-back",
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("quiz-form");
   const resultsContainer = document.getElementById("quiz-results");
@@ -40,10 +57,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const saturdayStops = plan.saturday.slice(0, stopCount);
     const sundayStops = plan.sunday.slice(0, stopCount);
 
+    const reason =
+      "Why this fits: you're most interested in " + FOCUS_LABELS[focus.value] +
+      ", you're planning around " + BUDGET_LABELS[budget.value] + " budget, and you like " +
+      PACE_LABELS[pace.value] + " pace. " + plan.name + " is built around exactly that combination.";
+
     resultsContainer.innerHTML =
       '<div class="result-card">' +
       "<h3>" + plan.name + "</h3>" +
       '<p class="result-tagline">' + plan.tagline + "</p>" +
+      '<p class="result-reason">' + reason + "</p>" +
       '<div class="result-columns">' +
       "<div><h4>Saturday</h4><ul>" +
       saturdayStops.map(function (stop) { return "<li>" + stop + "</li>"; }).join("") +
