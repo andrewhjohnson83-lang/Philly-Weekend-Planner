@@ -14,8 +14,8 @@ const BUDGET_LABELS = {
 };
 
 const PACE_LABELS = {
-  relaxed: "a relaxed",
-  packed: "a packed, back-to-back",
+  relaxed: "relaxed, with just a stop or two each day",
+  packed: "packed, with back-to-back stops",
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const sundayStops = plan.sunday.slice(0, stopCount);
 
     const reason =
-      "Why this fits: you're most interested in " + FOCUS_LABELS[focus.value] +
-      ", you're planning around " + BUDGET_LABELS[budget.value] + " budget, and you like " +
-      PACE_LABELS[pace.value] + " pace. " + plan.name + " is built around exactly that combination.";
+      "Why this fits: you care most about " + FOCUS_LABELS[focus.value] +
+      ", you're working with " + BUDGET_LABELS[budget.value] + " budget, and you like your days " +
+      PACE_LABELS[pace.value] + ". That's exactly what " + plan.name + " is built around.";
 
     resultsContainer.innerHTML =
       '<div class="result-card">' +
